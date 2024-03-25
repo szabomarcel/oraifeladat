@@ -1,0 +1,21 @@
+html{
+    background-color: bisque;
+    background-image: url(https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148697385.jpg);    
+    display: flex;
+    margin-top: 2vw;
+    margin-bottom: auto;
+    margin-right: 2vw;
+    margin-left: 25vw;
+}
+
+form{
+    background-color: beige;
+}
+
+.container{
+    background-color: lightgreen;
+}
+
+fieldset{
+    background-color:lightblue;
+}

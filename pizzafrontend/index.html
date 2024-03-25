@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js" integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Pizza ügyfel form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza ügyfelek nyilvántartás</h1>
+        <form action="#" method="post" class="row" id="pizza">
+            <fieldset>
+                <legend>
+                    Aktuális pizza felhasználó
+                    <div class="row">
+                        <div class="mb-3 col-4">
+                            <label for="vazon" class="form-label">Azonosító: </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="vnev" class="form-label">Név: </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="vcim" class="form-label">Lakcím: </label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </legend>
+            </fieldset>
+            <div class="d-flex justify-content-around">
+                <button type="button" class="btn btn-primary" id="create">Create</button>
+                <button type="read" class="btn btn-primary" id="read">Read</button>
+                <button type="update" class="btn btn-primary" id="update">Update</button>
+                <button type="delete" class="btn btn-primary" id="delete">Delete</button>
+            </div>
+        </form>
+        <div id="pizzaugyfellista">
+
+        </div>
+    </div>
+</body>
+</html>
