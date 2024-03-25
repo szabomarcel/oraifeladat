@@ -9,7 +9,7 @@ $adatJSON = json_decode($raw_data);
 $vazon = $_POST('vazon');
 $vnev = $_POST('vnev');
 $vcim = $_POST('vcim');
-require_once '.databaseconnect.php';
+require_once './databaseconnect.php';
 $sql = "UPDATE `vevo` SET `vazon`=?,`vnev`=?,`vcim`=? WHERE vazon=?";
 $stml = $connection->prepare($sql);
 $stml->bind_param("ss", $vnev, $vcim);

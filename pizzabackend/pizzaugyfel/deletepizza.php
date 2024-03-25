@@ -9,7 +9,7 @@ if(count($keresPelda) > 1){
         echo 'Nem Létező pizzaÜgyfél.';    
     }
 }
-require_once '.databaseconnect.php';
+require_once './databaseconnect.php';
 $result = $connection -> query($sql);
 if($result -> num_rows > 0){
     http_response_code(201);
