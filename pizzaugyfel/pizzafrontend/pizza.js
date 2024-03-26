@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded",function(){
     const readbutton = document.getElementById("read");
     const updatebutton = document.getElementById("update");
     const deletebutton = document.getElementById("delete");
-    const dolgozoPizzaForm = document.getElementById("dolgozoPizzaForm");
-    const dolgozoPizzaLista = document.getElementById("dolgozoPizzaLista");
+    baseUrl = "http://localhost/oraifeladat/pizzaugyfel/index.php?pizzaugyfel";    
     insertbutton.addEventListener("click", async function(){
         let pizza = new FormData(document.getElementById('pizza'));
         let baseUrl="http://localhost/oraifeladat/pizzabackend/index.php?pizzaugyfel";
@@ -26,14 +25,7 @@ document.addEventListener("DOMContentLoaded",function(){
         alert("Sikeres feltöltés");
     })
     readButton.addEventListener('click', async function () {
-        dolgozoForm.classList.add('d-none');
-        dolgozoForm.classList.remove('d-none');
-        let baseUrl = "http://localhost/oraifeladat/pizzabackend/index.php?pizzaugyfel";
-        let options = {
-            method: 'GET',
-            mode: "cors",
-        };
-        let response = await fetch(baseUrl, options);
+        let response = await fetch(baseUrl,);
         if (response.ok) {
             let data = await response.json();
             dolgozokListazasa(data);
